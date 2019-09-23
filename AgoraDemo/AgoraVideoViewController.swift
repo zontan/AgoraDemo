@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AgoraRtcEngineKit
 
 class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -15,6 +16,10 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var muteButton: UIButton!
     @IBOutlet weak var hangUpButton: UIButton!
     
+    let appID = "YourAppIDHere"
+    var agoraKit: AgoraRtcEngineKit?
+    let tempToken: String? = nil
+    var userID: UInt = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +27,20 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
         // Do any additional setup after loading the view.
     }
     
+    private func getAgoraEngine() -> AgoraRtcEngineKit {
+        if agoraKit == nil {
+            agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: appID, delegate: self)
+        }
+        
+        return agoraKit!
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        return collectionView.dequeueReusableCell(withReuseIdentifier: "videoCell", for: indexPath)
     }
 
     /*
@@ -40,4 +53,8 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     */
 
+}
+
+extension AgoraVideoViewController: AgoraRtcEngineDelegate {
+    
 }
