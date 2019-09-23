@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088D7BC55A6B0349389C669A /* Pods_AgoraDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977712695A93ECC213A8F595 /* Pods_AgoraDemoUITests.framework */; };
+		37D6D4F97C3D2D897D89BABB /* Pods_AgoraDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CF7FEF6AA69E381B55C2F6 /* Pods_AgoraDemo.framework */; };
+		39B0F03108C1BB85C1E9A449 /* Pods_AgoraDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CE898684AF6C4C3E41B29F /* Pods_AgoraDemoTests.framework */; };
 		7FD16E5423397214004DC4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E5323397214004DC4D6 /* AppDelegate.swift */; };
 		7FD16E5623397214004DC4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E5523397214004DC4D6 /* ViewController.swift */; };
 		7FD16E5923397214004DC4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD16E5723397214004DC4D6 /* Main.storyboard */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11E80B95411EBE7CE687621C /* Pods-AgoraDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AgoraDemoUITests/Pods-AgoraDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		14777849CACC06468DD1A9DF /* Pods-AgoraDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AgoraDemoTests/Pods-AgoraDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44CE898684AF6C4C3E41B29F /* Pods_AgoraDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CF7FEF6AA69E381B55C2F6 /* Pods_AgoraDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763C30AB3A997BE4CD671A7D /* Pods-AgoraDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AgoraDemoTests/Pods-AgoraDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7FD16E5023397214004DC4D6 /* AgoraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD16E5323397214004DC4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FD16E5523397214004DC4D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		7FD16E6F23397215004DC4D6 /* AgoraDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoraDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD16E7323397215004DC4D6 /* AgoraDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraDemoUITests.swift; sourceTree = "<group>"; };
 		7FD16E7523397215004DC4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A95E9DEB050942F26FF4940 /* Pods-AgoraDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemo.debug.xcconfig"; path = "Target Support Files/Pods-AgoraDemo/Pods-AgoraDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		977712695A93ECC213A8F595 /* Pods_AgoraDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBCFB4913CD10B0219CCF43 /* Pods-AgoraDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemo.release.xcconfig"; path = "Target Support Files/Pods-AgoraDemo/Pods-AgoraDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F49379B0214EEA8114F6E636 /* Pods-AgoraDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AgoraDemoUITests/Pods-AgoraDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D6D4F97C3D2D897D89BABB /* Pods_AgoraDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B0F03108C1BB85C1E9A449 /* Pods_AgoraDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088D7BC55A6B0349389C669A /* Pods_AgoraDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FB409FEA3B1C7CE13C5C455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70CF7FEF6AA69E381B55C2F6 /* Pods_AgoraDemo.framework */,
+				44CE898684AF6C4C3E41B29F /* Pods_AgoraDemoTests.framework */,
+				977712695A93ECC213A8F595 /* Pods_AgoraDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7FD16E4723397214004DC4D6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				7FD16E6723397215004DC4D6 /* AgoraDemoTests */,
 				7FD16E7223397215004DC4D6 /* AgoraDemoUITests */,
 				7FD16E5123397214004DC4D6 /* Products */,
+				A01BAAA85E385ED46FD8EB35 /* Pods */,
+				3FB409FEA3B1C7CE13C5C455 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,20 @@
 			path = AgoraDemoUITests;
 			sourceTree = "<group>";
 		};
+		A01BAAA85E385ED46FD8EB35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A95E9DEB050942F26FF4940 /* Pods-AgoraDemo.debug.xcconfig */,
+				DEBCFB4913CD10B0219CCF43 /* Pods-AgoraDemo.release.xcconfig */,
+				14777849CACC06468DD1A9DF /* Pods-AgoraDemoTests.debug.xcconfig */,
+				763C30AB3A997BE4CD671A7D /* Pods-AgoraDemoTests.release.xcconfig */,
+				F49379B0214EEA8114F6E636 /* Pods-AgoraDemoUITests.debug.xcconfig */,
+				11E80B95411EBE7CE687621C /* Pods-AgoraDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FD16E7823397215004DC4D6 /* Build configuration list for PBXNativeTarget "AgoraDemo" */;
 			buildPhases = (
+				F83A38A560E669C97384CE94 /* [CP] Check Pods Manifest.lock */,
 				7FD16E4C23397214004DC4D6 /* Sources */,
 				7FD16E4D23397214004DC4D6 /* Frameworks */,
 				7FD16E4E23397214004DC4D6 /* Resources */,
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FD16E7B23397215004DC4D6 /* Build configuration list for PBXNativeTarget "AgoraDemoTests" */;
 			buildPhases = (
+				91E3559DF51764AFA2933EDF /* [CP] Check Pods Manifest.lock */,
 				7FD16E6023397215004DC4D6 /* Sources */,
 				7FD16E6123397215004DC4D6 /* Frameworks */,
 				7FD16E6223397215004DC4D6 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FD16E7E23397215004DC4D6 /* Build configuration list for PBXNativeTarget "AgoraDemoUITests" */;
 			buildPhases = (
+				4639013E76EAB79DCFDB71A0 /* [CP] Check Pods Manifest.lock */,
 				7FD16E6B23397215004DC4D6 /* Sources */,
 				7FD16E6C23397215004DC4D6 /* Frameworks */,
 				7FD16E6D23397215004DC4D6 /* Resources */,
@@ -250,6 +294,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4639013E76EAB79DCFDB71A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E3559DF51764AFA2933EDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83A38A560E669C97384CE94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FD16E4C23397214004DC4D6 /* Sources */ = {
@@ -430,6 +543,7 @@
 		};
 		7FD16E7923397215004DC4D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A95E9DEB050942F26FF4940 /* Pods-AgoraDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +561,7 @@
 		};
 		7FD16E7A23397215004DC4D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEBCFB4913CD10B0219CCF43 /* Pods-AgoraDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +579,7 @@
 		};
 		7FD16E7C23397215004DC4D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14777849CACC06468DD1A9DF /* Pods-AgoraDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +600,7 @@
 		};
 		7FD16E7D23397215004DC4D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763C30AB3A997BE4CD671A7D /* Pods-AgoraDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +621,7 @@
 		};
 		7FD16E7F23397215004DC4D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49379B0214EEA8114F6E636 /* Pods-AgoraDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +641,7 @@
 		};
 		7FD16E8023397215004DC4D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E80B95411EBE7CE687621C /* Pods-AgoraDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
