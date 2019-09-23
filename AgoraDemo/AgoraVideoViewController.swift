@@ -25,6 +25,17 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpVideo()
+    }
+    
+    func setUpVideo() {
+        getAgoraEngine().enableVideo()
+        
+        let videoCanvas = AgoraRtcVideoCanvas()
+        videoCanvas.uid = userID
+        videoCanvas.view = localVideoView
+        videoCanvas.renderMode = .fit
+        getAgoraEngine().setupLocalVideo(videoCanvas)
     }
     
     private func getAgoraEngine() -> AgoraRtcEngineKit {
