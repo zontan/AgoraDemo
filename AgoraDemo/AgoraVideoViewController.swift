@@ -21,6 +21,7 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
     let tempToken: String? = nil
     var userID: UInt = 0
     var channelName = "default"
+    var remoteUserIDs: [UInt] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,11 +58,22 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return remoteUserIDs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: "videoCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "videoCell", for: indexPath)
+        
+        let remoteID = remoteUserIDs[indexPath.row]
+        if let videoCell = cell as? VideoCollectionViewCell {
+            let videoCanvas = AgoraRtcVideoCanvas()
+            videoCanvas.uid = remoteID
+            videoCanvas.view = videoCell.videoView
+            videoCanvas.renderMode = .fit
+            getAgoraEngine().setupRemoteVideo(videoCanvas)
+        }
+        
+        return cell
     }
 
     /*
@@ -77,5 +89,15 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
 }
 
 extension AgoraVideoViewController: AgoraRtcEngineDelegate {
+    func rtcEngine(_ engine: AgoraRtcEngineKit, didJoinedOfUid uid: UInt, elapsed: Int) {
+        remoteUserIDs.append(uid)
+        collectionView.reloadData()
+    }
     
+    func rtcEngine(_ engine: AgoraRtcEngineKit, didOfflineOfUid uid: UInt, reason: AgoraUserOfflineReason) {
+        if let index = remoteUserIDs.firstIndex(where: { $0 == uid }) {
+            remoteUserIDs.remove(at: index)
+            collectionView.reloadData()
+        }
+    }
 }
