@@ -11,12 +11,13 @@
 		37D6D4F97C3D2D897D89BABB /* Pods_AgoraDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CF7FEF6AA69E381B55C2F6 /* Pods_AgoraDemo.framework */; };
 		39B0F03108C1BB85C1E9A449 /* Pods_AgoraDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CE898684AF6C4C3E41B29F /* Pods_AgoraDemoTests.framework */; };
 		7FD16E5423397214004DC4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E5323397214004DC4D6 /* AppDelegate.swift */; };
-		7FD16E5623397214004DC4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E5523397214004DC4D6 /* ViewController.swift */; };
 		7FD16E5923397214004DC4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD16E5723397214004DC4D6 /* Main.storyboard */; };
 		7FD16E5B23397215004DC4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD16E5A23397215004DC4D6 /* Assets.xcassets */; };
 		7FD16E5E23397215004DC4D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD16E5C23397215004DC4D6 /* LaunchScreen.storyboard */; };
 		7FD16E6923397215004DC4D6 /* AgoraDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E6823397215004DC4D6 /* AgoraDemoTests.swift */; };
 		7FD16E7423397215004DC4D6 /* AgoraDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E7323397215004DC4D6 /* AgoraDemoUITests.swift */; };
+		7FD16E8223398306004DC4D6 /* AgoraVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E8123398306004DC4D6 /* AgoraVideoViewController.swift */; };
+		7FD16E84233983D6004DC4D6 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16E83233983D6004DC4D6 /* VideoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		763C30AB3A997BE4CD671A7D /* Pods-AgoraDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AgoraDemoTests/Pods-AgoraDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7FD16E5023397214004DC4D6 /* AgoraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD16E5323397214004DC4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FD16E5523397214004DC4D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FD16E5823397214004DC4D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FD16E5A23397215004DC4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD16E5D23397215004DC4D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +55,8 @@
 		7FD16E6F23397215004DC4D6 /* AgoraDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoraDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD16E7323397215004DC4D6 /* AgoraDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraDemoUITests.swift; sourceTree = "<group>"; };
 		7FD16E7523397215004DC4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD16E8123398306004DC4D6 /* AgoraVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraVideoViewController.swift; sourceTree = "<group>"; };
+		7FD16E83233983D6004DC4D6 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A95E9DEB050942F26FF4940 /* Pods-AgoraDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemo.debug.xcconfig"; path = "Target Support Files/Pods-AgoraDemo/Pods-AgoraDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		977712695A93ECC213A8F595 /* Pods_AgoraDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBCFB4913CD10B0219CCF43 /* Pods-AgoraDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraDemo.release.xcconfig"; path = "Target Support Files/Pods-AgoraDemo/Pods-AgoraDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,11 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				7FD16E5323397214004DC4D6 /* AppDelegate.swift */,
-				7FD16E5523397214004DC4D6 /* ViewController.swift */,
 				7FD16E5723397214004DC4D6 /* Main.storyboard */,
 				7FD16E5A23397215004DC4D6 /* Assets.xcassets */,
 				7FD16E5C23397215004DC4D6 /* LaunchScreen.storyboard */,
 				7FD16E5F23397215004DC4D6 /* Info.plist */,
+				7FD16E8123398306004DC4D6 /* AgoraVideoViewController.swift */,
+				7FD16E83233983D6004DC4D6 /* VideoCollectionViewCell.swift */,
 			);
 			path = AgoraDemo;
 			sourceTree = "<group>";
@@ -162,7 +165,6 @@
 				F49379B0214EEA8114F6E636 /* Pods-AgoraDemoUITests.debug.xcconfig */,
 				11E80B95411EBE7CE687621C /* Pods-AgoraDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -369,8 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD16E5623397214004DC4D6 /* ViewController.swift in Sources */,
+				7FD16E84233983D6004DC4D6 /* VideoCollectionViewCell.swift in Sources */,
 				7FD16E5423397214004DC4D6 /* AppDelegate.swift in Sources */,
+				7FD16E8223398306004DC4D6 /* AgoraVideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
