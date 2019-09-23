@@ -20,12 +20,14 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
     var agoraKit: AgoraRtcEngineKit?
     let tempToken: String? = nil
     var userID: UInt = 0
+    var channelName = "default"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpVideo()
+        joinChannel()
     }
     
     func setUpVideo() {
@@ -36,6 +38,14 @@ class AgoraVideoViewController: UIViewController, UICollectionViewDelegate, UICo
         videoCanvas.view = localVideoView
         videoCanvas.renderMode = .fit
         getAgoraEngine().setupLocalVideo(videoCanvas)
+    }
+    
+    func joinChannel() {
+        localVideoView.isHidden = false
+        
+        getAgoraEngine().joinChannel(byToken: tempToken, channelId: channelName, info: nil, uid: userID) { [weak self] (sid, uid, elapsed) in
+            self?.userID = uid
+        }
     }
     
     private func getAgoraEngine() -> AgoraRtcEngineKit {
