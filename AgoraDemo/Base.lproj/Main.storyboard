@@ -28,10 +28,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-Vd-8Ue">
                                         <rect key="frame" x="40" y="650" width="35" height="30"/>
                                         <state key="normal" title="Mute"/>
+                                        <connections>
+                                            <action selector="didToggleMute:" destination="Xam-r1-uGf" eventType="touchUpInside" id="cX3-tx-tME"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGp-Wn-LdZ">
                                         <rect key="frame" x="313" y="650" width="61" height="30"/>
                                         <state key="normal" title="Hang Up"/>
+                                        <connections>
+                                            <action selector="didTapHangUp:" destination="Xam-r1-uGf" eventType="touchUpInside" id="e0R-Vb-Mhd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
