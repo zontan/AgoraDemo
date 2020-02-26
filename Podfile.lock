@@ -1,16 +1,31 @@
 PODS:
-  - AgoraRtcEngine_iOS (2.9.0)
+  - AgoraRtcEngine_iOS (2.9.3)
+  - AgoraUIKit (0.0.2):
+    - AgoraRtcEngine_iOS
+  - KeyboardAvoidingView (5.0.0):
+    - ViewState (>= 1.0.0)
+  - ViewState (1.0.0)
 
 DEPENDENCIES:
-  - AgoraRtcEngine_iOS
+  - AgoraUIKit (from `../iOS-UIKit`)
+  - KeyboardAvoidingView (~> 5.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AgoraRtcEngine_iOS
+    - KeyboardAvoidingView
+    - ViewState
+
+EXTERNAL SOURCES:
+  AgoraUIKit:
+    :path: "../iOS-UIKit"
 
 SPEC CHECKSUMS:
-  AgoraRtcEngine_iOS: b316f64bc07f7973f0239316b2b4f79ec369e25c
+  AgoraRtcEngine_iOS: 518353e23f05ad47d1348ee8ba154d7ea8b81c8b
+  AgoraUIKit: c1b132ba4500ca493fa3318cabd4caa7a856da58
+  KeyboardAvoidingView: 93c4f709386c998b7b7f6b405a05c5c3585410a7
+  ViewState: 78aa77483e74e592c22e841619b853bc686843be
 
-PODFILE CHECKSUM: 7427d2b43c32f2736881fcf2150c13c84ac8fb3c
+PODFILE CHECKSUM: 3692c09e1fbe5aeb5d98031a524d0b1f169db847
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
